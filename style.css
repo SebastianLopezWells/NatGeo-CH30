@@ -1,0 +1,25 @@
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td,th{
+    border:1px solid black;
+    width: 120px;
+    text-align: center;
+    height: 30px;
+}
+th{
+    background-color: rgb(194, 190, 190);
+    font-size: 700;
+}
+
+.fail{
+    color: red;
+    background-color: #ffc1c1;
+}
+
+.u102{
+    font-size: 900;
+    background-color:rgb(226, 226, 130);
+}

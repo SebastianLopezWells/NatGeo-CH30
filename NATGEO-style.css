@@ -1,45 +1,129 @@
-/*Navigation bar for NatGeo*/
-nav{
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    align-items: center;
-    background: #fff;
-    border-bottom: 1px solid #e6e6e6;
-    height: 49px;
-    justify-content: flex-start;
-    padding: 0 17px;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+/*global*/
+*{
+    margin: 0;
+    padding-top: 0;
+    font-family: 'Lato', sans-serif;
 }
 
-
-nav a{
-
-}
-
-/*body content*/
 body{
+    font-family: 'Lato', sans-serif;
     background-color: black;
+    color:white
+}
+image{
+    max-width: 50%;
 }
 
-h1{
-    color:#e6e6e6;
-    font-size: 42px;
-    font-weight: 400;
+a{
+    text-decoration: none;
+}
+
+
+/*utilities*/
+
+/*menu*/
+/*Navigation bar for NatGeo*/
+nav.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 52px;
+    background-color: white;
+}
+
+nav.menu .smalls-logo{
+    height: auto;
+    margin-left: 15px;
+}
+
+div.container{
+    margin-left: 15px;
+}
+nav.menu a{
+    margin-right: 30px;
+    color:black;
+}
+.complete-logo , .link-news, .link-menu, .link-search{
+    display: none;
+}
+.link-login{
+    text-transform: uppercase ;
+    font-size: 18px;
+    font-weight: 700;
     letter-spacing: 3px;
-    letter-spacing: 3.5px;
-    line-height: 1.5;
-    line-height: 1.19;
-    text-transform: uppercase;
-    text-align: center;
-}
-h2{
-    color: white;
-}
-h3{
-    color: white;
 }
 
-p{
-    color: white;
+nav.menu a.link-sub{
+   text-transform: uppercase;
+   font-size: 18px ;
+   letter-spacing: 3px;
+   font-weight: 700;
+
+   color:white;
+   background-color: black;
+   padding: 100% 18px 14px 18px;
+   box-shadow: inset 0 0 0 0 #ffcc00;
+
+    transition: ease-out 0.3s;
+    outline: none;
 }
+
+nav.menu a.link-sub:hover{
+
+    background-color: #ffcc00;
+    color: black;
+    width: 100px;
+    box-shadow: inset 100px 0 0 0 #ffcc00;
+ }
+.link-arrow{
+  font-size: 10px;
+  color: black;
+}
+/*header*/
+header{
+    height: 240px;
+
+}
+
+header h1{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+header p{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-style: bold;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 2.5px;
+}
+
+header .line{
+    background-color: #ffcc00;
+    height: 5px;
+    margin-top: 25px;
+    margin-left: 48%;
+    margin-right: 48%;
+}
+
+a.link-subs-2{
+    padding: 2px;
+    transition: 1s;
+    border-bottom: solid #ffcc00 2px;
+    color: white;
+
+    transition: 0.3s;
+    box-shadow: inset 0 0 0 0 #ffcc00;
+ }
+ a.link-subs-2:hover{
+     background-color: #ffcc00;
+     cursor: pointer;
+     box-shadow: inset 0 -100px 0 0 #ffcc00;}
+     

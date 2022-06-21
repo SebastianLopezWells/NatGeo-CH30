@@ -23,3 +23,48 @@ th{
     font-size: 900;
     background-color:rgb(226, 226, 130);
 }
+
+/*FLEX EXAMPLE*/
+
+.flex-parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    height: 300px;
+}
+
+.flex-child{
+    flex-basis: 100px ;
+
+
+    background-color: green;
+    border: lawngreen;
+    color: lawngreen;
+    height: 50px;
+}
+
+/*GRID EXAMPLE*/
+
+.grid-parent{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: aliceblue;
+    height: 300px;
+}
+
+.grid-child{
+    background-color: gray;
+    border: 1px solid black;
+}
+
+body{
+    background-color: #ffeea1;
+}
+
+@media(min-width:768px){
+    body{
+        background-color: red;
+    }
+}
